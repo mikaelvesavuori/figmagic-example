@@ -3153,9 +3153,9 @@ fbjs@^0.8.16, fbjs@^0.8.5:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
-figmagic@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/figmagic/-/figmagic-0.2.0.tgz#d952caa6903166e7257c4571c7c7ce25ecbee5c5"
+figmagic@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/figmagic/-/figmagic-0.2.1.tgz#476e7c0a4760a0951eb37bfbeb47f9d89e34f8a3"
   dependencies:
     request "^2.85.0"
 
