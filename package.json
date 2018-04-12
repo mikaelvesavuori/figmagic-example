@@ -17,7 +17,7 @@
 		"clean-webpack-plugin": "^0.1.19",
 		"css-loader": "^0.28.11",
 		"extract-text-webpack-plugin": "^4.0.0-beta.0",
-		"figmagic": "^0.2.1",
+		"figmagic": "^0.2.2",
 		"file-loader": "^1.1.11",
 		"html-webpack-plugin": "^3.0.7",
 		"raw-loader": "^0.5.1",
