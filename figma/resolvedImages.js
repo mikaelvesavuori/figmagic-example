@@ -1,0 +1,1 @@
+module.exports = '{"Grid – Desktop (1280px)":"71:3","Button Figma":"5:9","Header Image":"7:4","Button Sketch":"48:4","Sketch Image Holder":"84:3","fixedIds":"71%3A3,5%3A9,7%3A4,48%3A4,84%3A3"}'
