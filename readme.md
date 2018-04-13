@@ -10,6 +10,8 @@ An example setup is available at [https://www.figma.com/file/KLLDK9CBSg7eAayiTY3
 * You will need to have a Figma file setup correctly to test this
 * You will also need to have a Figma API key
 
+Read more on the [Figma developer site](https://www.figma.com/developers/docs) if you need any further information.
+
 ## Key/token locations
 
 1.  `package.json`: In the scripts block you will need to change the blanks to your actual file and token
