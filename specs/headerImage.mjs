@@ -1,13 +1,17 @@
-module.exports = {
+const headerImage = {
  "name": "Header Image",
- "gridWidth": 3,
+ "gridWidth": 1,
+ "perfectlyFitsGrid": false,
  "pxWidth": 308,
  "pxHeight": 128,
  "description": "Header image with a colored semi-transparent cover on top",
  "subComponents": [
   "Box",
   "Image",
-  "Cover"
+  "Cover",
+  "Button Figma (Component ID: 5:9)"
  ],
- "id": "7:4"
+ "id": "172:0"
 }
+
+ export default headerImage;
