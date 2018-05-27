@@ -3,6 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<title>Figmagic Demo</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		html {
+			/* Set root rem to 16px */
+			font-size: 16px;
+		}
+
+		/* Allow fluid scaling of typography at various screen sizes */
+
+		@media screen and (max-width: 768px) {
+			html {
+				font-size: 14px;
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			html {
+				font-size: 12px;
+			}
+		}
+	</style>
 </head>
 
 <body>

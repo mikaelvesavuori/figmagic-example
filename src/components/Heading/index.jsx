@@ -6,7 +6,7 @@ import HeadingStyled from './HeadingStyled';
 const Heading = props => <HeadingStyled>{props.children}</HeadingStyled>;
 
 Heading.propTypes = {
-	children: PropTypes.element
+	children: PropTypes.string.isRequired
 };
 
 export default Heading;

@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import ButtonStyled from './ButtonStyled';
 
-const Button = props => <ButtonStyled>{props.children}</ButtonStyled>;
+const Button = props => <ButtonStyled onClick={props.onClick}>{props.children}</ButtonStyled>;
 
 Button.propTypes = {
-	children: PropTypes.element
+	onClick: PropTypes.func.isRequired
 };
 
 export default Button;
