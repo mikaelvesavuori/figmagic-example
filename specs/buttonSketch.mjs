@@ -12,4 +12,4 @@ const buttonSketch = {
  "id": "48:4"
 }
 
- export default buttonSketch;
+export default buttonSketch;

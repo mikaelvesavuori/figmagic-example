@@ -12,4 +12,4 @@ const buttonFigma = {
  "id": "5:9"
 }
 
- export default buttonFigma;
+export default buttonFigma;

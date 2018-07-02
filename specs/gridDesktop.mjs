@@ -8,4 +8,4 @@ const gridDesktop = {
  "id": "174:0"
 }
 
- export default gridDesktop;
+export default gridDesktop;

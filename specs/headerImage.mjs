@@ -14,4 +14,4 @@ const headerImage = {
  "id": "172:0"
 }
 
- export default headerImage;
+export default headerImage;

@@ -5,4 +5,4 @@ const lineHeights = {
  "lineHeightL": 1.7
 }
 
- export default lineHeights;
+export default lineHeights;

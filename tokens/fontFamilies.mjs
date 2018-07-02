@@ -4,4 +4,4 @@ const fontFamilies = {
  "fontRegular": "FiraSans-Regular"
 }
 
- export default fontFamilies;
+export default fontFamilies;

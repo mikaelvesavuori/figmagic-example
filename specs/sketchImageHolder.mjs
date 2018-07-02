@@ -12,4 +12,4 @@ const sketchImageHolder = {
  "id": "84:3"
 }
 
- export default sketchImageHolder;
+export default sketchImageHolder;
