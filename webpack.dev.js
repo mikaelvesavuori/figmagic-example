@@ -15,8 +15,8 @@ module.exports = merge(common, {
 	devtool: 'cheap-module-source-map',
 	plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()],
 	performance: {
-		maxEntrypointSize: 1024000,
-		maxAssetSize: 512000,
+		maxEntrypointSize: 20480000,
+		maxAssetSize: 1536000,
 		hints: 'warning'
 	}
 });

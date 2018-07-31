@@ -12,7 +12,7 @@ import GridStyled from './GridStyled';
 const Grid = props => <GridStyled size={props.size}>{props.children}</GridStyled>;
 
 Grid.propTypes = {
-	children: PropTypes.element.isRequired,
+	children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
 	size: PropTypes.string.isRequired
 };
 

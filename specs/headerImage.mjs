@@ -1,7 +1,7 @@
 const headerImage = {
  "name": "Header Image",
- "gridWidth": 1,
- "perfectlyFitsGrid": false,
+ "gridWidth": 3,
+ "perfectlyFitsGrid": true,
  "pxWidth": 308,
  "pxHeight": 128,
  "description": "Header image with a colored semi-transparent cover on top",
@@ -14,4 +14,4 @@ const headerImage = {
  "id": "172:0"
 }
 
-export default headerImage;
+export default headerImage

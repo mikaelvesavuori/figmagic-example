@@ -55,13 +55,7 @@ module.exports = {
 										loose: true
 									}
 								],
-								'@babel/preset-react',
-								[
-									'@babel/preset-stage-0',
-									{
-										decoratorsLegacy: true
-									}
-								]
+								'@babel/preset-react'
 							],
 							plugins: [
 								[

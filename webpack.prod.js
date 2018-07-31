@@ -16,5 +16,10 @@ module.exports = merge(common, {
 		},
 		minimize: false
 	},
-	plugins: [new webpack.optimize.ModuleConcatenationPlugin()]
+	plugins: [new webpack.optimize.ModuleConcatenationPlugin()],
+	performance: {
+		maxEntrypointSize: 512000,
+		maxAssetSize: 384000,
+		hints: 'warning'
+	}
 });
