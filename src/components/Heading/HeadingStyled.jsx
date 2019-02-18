@@ -6,10 +6,10 @@ import fontSizes from 'tokens/fontSizes.mjs';
 import colors from 'tokens/colors.mjs';
 
 const HeadingStyled = styled.h1`
-	font-family: ${fontFamilies.fontExtralight};
+	font-family: ${fontFamilies.regular};
 	font-weight: 500; /* Reset font weight to lighter value in order to avoid bolding it, thus unsetting the */
-	font-size: ${fontSizes.headingXxl};
-	color: ${colors.blue};
+	font-size: ${fontSizes.h1};
+	color: ${colors.gray1};
 `;
 
 export default HeadingStyled;

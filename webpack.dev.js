@@ -10,13 +10,14 @@ module.exports = merge(common, {
 		historyApiFallback: true,
 		contentBase: srcDir,
 		publicPath: '/',
-		hot: true
+		hot: true,
+		host: '0.0.0.0'
 	},
 	devtool: 'cheap-module-source-map',
 	plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()],
 	performance: {
-		maxEntrypointSize: 20480000,
-		maxAssetSize: 1536000,
+		maxEntrypointSize: 1024000,
+		maxAssetSize: 1024000,
 		hints: 'warning'
 	}
 });

@@ -5,9 +5,9 @@ import fontSizes from 'tokens/fontSizes.mjs';
 import colors from 'tokens/colors.mjs';
 
 const ParagraphStyled = styled.p`
-	font-family: ${fontFamilies.fontRegular};
-	font-size: ${fontSizes.fontSizeL};
-	color: ${colors.blue};
+	font-family: ${fontFamilies.regular};
+	font-size: ${fontSizes.m};
+	color: ${colors.gray2};
 `;
 
 export default ParagraphStyled;

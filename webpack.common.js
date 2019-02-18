@@ -1,11 +1,13 @@
 const path = require('path');
+const webpack = require('webpack');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
 const assetsDir = path.resolve(__dirname, 'src/assets/');
-const srcDir = path.resolve(__dirname, 'src');
+const srcDir = path.resolve(__dirname, 'src/');
 const distDir = path.resolve(__dirname, 'dist');
 
 module.exports = {
@@ -20,23 +22,12 @@ module.exports = {
 		publicPath: '/'
 	},
 	resolve: {
-		modules: [path.resolve(__dirname, 'node_modules'), path.resolve(__dirname, 'src')],
-		extensions: [
-			'.js',
-			'.jsx',
-			'.mjs',
-			'.ts',
-			'.tsx',
-			'.html',
-			'.jpg',
-			'.jpeg',
-			'.svg',
-			'.png',
-			'.woff2',
-			'.woff',
-			'.scss',
-			'.css'
-		]
+		modules: [
+			path.resolve(__dirname, 'node_modules'),
+			path.resolve(__dirname, 'src'),
+			path.resolve(__dirname, './')
+		],
+		extensions: ['.js', '.jsx', '.html', '.jpg', '.jpeg', '.svg', '.png', '.woff2', '.woff']
 	},
 	module: {
 		rules: [
@@ -44,46 +35,9 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				use: [
 					{
-						loader: 'babel-loader',
-						options: {
-							presets: [
-								[
-									'@babel/preset-env',
-									{
-										modules: false,
-										useBuiltIns: false,
-										loose: true
-									}
-								],
-								'@babel/preset-react'
-							],
-							plugins: [
-								[
-									'babel-plugin-styled-components',
-									{
-										displayName: true,
-										minify: true
-									}
-								]
-							]
-						}
+						loader: 'babel-loader'
 					}
 				],
-				exclude: /node_modules/
-			},
-			{
-				test: /\.(scss|css)$/,
-				loader: ExtractTextPlugin.extract({
-					fallback: 'style-loader',
-					use: [
-						{
-							loader: 'css-loader',
-							options: {
-								importLoaders: 1
-							}
-						}
-					]
-				}),
 				exclude: /node_modules/
 			},
 			{
@@ -92,7 +46,8 @@ module.exports = {
 					{
 						loader: 'file-loader',
 						options: {
-							name: '[path][name].[ext]'
+							name: '[path][name].[ext]',
+							emitFile: false
 						}
 					}
 				],
@@ -103,7 +58,7 @@ module.exports = {
 				test: /\.html$/,
 				use: [
 					{
-						loader: 'raw-loader'
+						loader: 'html-loader'
 					}
 				],
 				exclude: /node_modules/
@@ -112,21 +67,22 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin('dist'),
-		new ExtractTextPlugin('assets/css/styles.css'),
+		new CopyWebpackPlugin([
+			{
+				from: `${srcDir}/assets/`,
+				to: `${distDir}/assets/` // Ugly as shit, but is a fix until we manage to get paths to work correctly again
+			}
+		]),
 		new HtmlWebpackPlugin({
 			template: path.join(srcDir, 'index.html'),
 			path: distDir,
 			filename: 'index.html',
 			minify: {
-				collapseWhitespace: true,
 				collapseInlineTagWhitespace: true,
+				collapseWhitespace: true,
 				removeComments: true,
 				removeRedundantAttributes: true
 			}
-		}),
-		new ScriptExtHtmlWebpackPlugin({
-			defaultAttribute: 'defer',
-			preload: /\.js$/
 		})
 	]
 };

@@ -7,9 +7,9 @@ import colors from 'tokens/colors.mjs';
 
 const ButtonStyled = styled.button`
 	width: 100%;
-	font-size: ${fontSizes.fontSizeL};
-	font-family: ${fontFamilies.fontSemibold};
-	color: ${colors.blue};
+	font-size: ${fontSizes.m};
+	font-family: ${fontFamilies.medium};
+	color: ${colors.gray1};
 	padding: ${spacing.tiny} ${spacing.small};
 `;
 

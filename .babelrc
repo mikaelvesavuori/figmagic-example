@@ -1,19 +1,33 @@
 {
-	"plugins": [
-		[
-			"module-resolver",
-			{
-				"root": ["./", "./src"]
-			}
-		]
-	],
 	"presets": [
 		[
 			"@babel/preset-env",
 			{
-				"modules": false
+				"modules": false,
+				"loose": true,
+				"useBuiltIns": "usage",
+				"targets": {
+					"browsers": [">0.25%", "ie 11", "not op_mini all"]
+				}
 			}
 		],
 		"@babel/preset-react"
-	]
+	],
+	"plugins": [
+		"@babel/plugin-syntax-class-properties",
+		"@babel/plugin-proposal-class-properties",
+		"@babel/plugin-syntax-dynamic-import",
+		[
+			"babel-plugin-styled-components",
+			{
+				"displayName": false,
+				"minify": true
+			}
+		]
+	],
+	"env": {
+		"test": {
+			"presets": [["@babel/preset-env"], "@babel/preset-react"]
+		}
+	}
 }

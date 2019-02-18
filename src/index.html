@@ -1,38 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no"
+		/>
 
-<head>
-	<meta charset="utf-8">
-	<title>Figmagic Demo</title>
-	<style>
-		body {
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-		}
+		<title>Figmagic Example</title>
 
-		html {
-			/* Set root rem to 16px */
-			font-size: 16px;
-		}
-
-		/* Allow fluid scaling of typography at various screen sizes */
-
-		@media screen and (max-width: 768px) {
-			html {
-				font-size: 14px;
+		<!-- Inline critical CSS -->
+		<style>
+			body {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+					Cantarell, 'Helvetica Neue', sans-serif;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
 			}
-		}
 
-		@media screen and (max-width: 480px) {
 			html {
-				font-size: 12px;
+				/* Set root rem to 16px */
+				font-size: 16px;
+				height: 100%;
 			}
-		}
-	</style>
-</head>
 
-<body>
-	<div id="app"></div>
-</body>
+			#root {
+				height: 100%;
+			}
 
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			p,
+			div,
+			span,
+			form,
+			input,
+			textarea,
+			button,
+			select,
+			article,
+			section {
+				font-size: 16px;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+					Cantarell, 'Helvetica Neue', sans-serif;
+			}
+
+			img {
+				max-width: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="root"></div>
+	</body>
 </html>

@@ -1,7 +1,7 @@
 const fontWeights = {
- "fontExtralight": 200,
- "fontSemibold": 600,
- "fontRegular": 400
+ "light": 300,
+ "medium": 500,
+ "regular": 400
 }
 
 export default fontWeights;

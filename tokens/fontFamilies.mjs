@@ -1,7 +1,7 @@
 const fontFamilies = {
- "fontExtralight": "FiraSans-ExtraLight",
- "fontSemibold": "FiraSans-SemiBold",
- "fontRegular": "FiraSans-Regular"
+ "light": "HelveticaNeue",
+ "medium": "HelveticaNeue",
+ "regular": "HelveticaNeue"
 }
 
 export default fontFamilies;

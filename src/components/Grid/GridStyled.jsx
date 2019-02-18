@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import grid from 'tokens/grid';
-
 const GridStyled = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 
 	> * {
-		flex: 0 0 calc((100% / ${grid.columnsCount}) * ${props => props.size});
+		flex: 0 0 calc((100% / 12) * ${props => props.size});
 
 		@media screen and (max-width: 768px) {
-			flex: 0 0 ${props => (props.sizeTablet ? props.sizeTablet : props.sizeTablet)};
+			flex: 0 0 ${props => props.sizeTablet};
 		}
 
 		@media screen and (max-width: 480px) {
@@ -32,5 +30,3 @@ GridStyled.defaultProps = {
 };
 
 export default GridStyled;
-// 	${state => (state.selected ? `${sizing.sizeHairline} solid ${color.colorBlackWool}` : "")};
-/* max-width: calc((100% / ${grid.columnsCount}) * ${props => props.size}); */
