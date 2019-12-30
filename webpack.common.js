@@ -1,33 +1,43 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 
-const assetsDir = path.resolve(__dirname, 'src/assets/');
-const srcDir = path.resolve(__dirname, 'src/');
-const distDir = path.resolve(__dirname, 'dist');
+const assetsDir = path.resolve(__dirname, "src/assets/");
+const srcDir = path.resolve(__dirname, "src/");
+const distDir = path.resolve(__dirname, "dist");
 
 module.exports = {
 	watch: false,
 	context: srcDir,
 	entry: {
-		app: './index.jsx'
+		app: "./index.jsx"
 	},
 	output: {
 		path: distDir,
-		filename: '[name].[hash].js',
-		publicPath: '/'
+		filename: "[name].[hash].js",
+		publicPath: "/"
 	},
 	resolve: {
 		modules: [
-			path.resolve(__dirname, 'node_modules'),
-			path.resolve(__dirname, 'src'),
-			path.resolve(__dirname, './')
+			path.resolve(__dirname, "node_modules"),
+			path.resolve(__dirname, "src"),
+			path.resolve(__dirname, "./")
 		],
-		extensions: ['.js', '.jsx', '.html', '.jpg', '.jpeg', '.svg', '.png', '.woff2', '.woff']
+		extensions: [
+			".js",
+			".jsx",
+			".html",
+			".jpg",
+			".jpeg",
+			".svg",
+			".png",
+			".woff2",
+			".woff"
+		]
 	},
 	module: {
 		rules: [
@@ -35,7 +45,7 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				use: [
 					{
-						loader: 'babel-loader'
+						loader: "babel-loader"
 					}
 				],
 				exclude: /node_modules/
@@ -44,9 +54,9 @@ module.exports = {
 				test: /\.(jpg|jpeg|svg|png|woff2|woff)$/,
 				use: [
 					{
-						loader: 'file-loader',
+						loader: "file-loader",
 						options: {
-							name: '[path][name].[ext]',
+							name: "[path][name].[ext]",
 							emitFile: false
 						}
 					}
@@ -58,7 +68,7 @@ module.exports = {
 				test: /\.html$/,
 				use: [
 					{
-						loader: 'html-loader'
+						loader: "html-loader"
 					}
 				],
 				exclude: /node_modules/
@@ -66,7 +76,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new CleanWebpackPlugin('dist'),
+		new CleanWebpackPlugin(),
 		new CopyWebpackPlugin([
 			{
 				from: `${srcDir}/assets/`,
@@ -74,9 +84,9 @@ module.exports = {
 			}
 		]),
 		new HtmlWebpackPlugin({
-			template: path.join(srcDir, 'index.html'),
+			template: path.join(srcDir, "index.html"),
 			path: distDir,
-			filename: 'index.html',
+			filename: "index.html",
 			minify: {
 				collapseInlineTagWhitespace: true,
 				collapseWhitespace: true,

@@ -10,6 +10,7 @@
 	"prettier.printWidth": 100,
 	"prettier.useTabs": true,
 	"prettier.tabWidth": 2,
-	"prettier.eslintIntegration": true,
-	"prettier.stylelintIntegration": true
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
