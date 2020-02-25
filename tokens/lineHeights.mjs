@@ -1,8 +1,8 @@
 const lineHeights = {
- "xs": 1,
- "s": 1.25,
- "m": 1.5,
- "l": 1.7
+ "xs": "1.00",
+ "s": "1.46",
+ "m": "1.76",
+ "l": "1.99"
 }
 
 export default lineHeights;

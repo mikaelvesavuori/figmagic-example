@@ -16,5 +16,6 @@ The example design token setup is available at [https://www.figma.com/file/UkrKT
 - Set your URL and token in a file called `.env` in the root of your project (such as in this one, if you want to get started right away)
 - Clone [Figmagic](https://github.com/mikaelvesavuori/figmagic), install it with `yarn setup` or `npm setup`
 - Run the command `figmagic` in your project directory
+- To run local Figmagic with arguments, it could be done like `npm run figmagic -- --debug -f em` to set debug mode and grabbing fonts in `em` units
 
 Read more on the [Figma developer site](https://www.figma.com/developers/docs) if you need any further information.
