@@ -3,7 +3,7 @@ fileignoreconfig:
   checksum: 3af475a2a628c381ca3ec91d04000ed1caee1ffecc1e5119c54058b6809372df
   ignore_detectors: []
 - filename: figma/figma.json
-  checksum: b5f4d3dd71f31613c4aac66218d1fd47a55baa5abecfc7cf7cc76f0850f856a1
+  checksum: 3579adb1c4159a42f58f409ff443941cee204e198f9b8c7d9b3db8ee2377d5bf
   ignore_detectors: []
 - filename: yarn.lock
   checksum: 063fbf2664b5334ca482136f2123c0f3802c2b3f9b482d3c22d32260422b44b7
