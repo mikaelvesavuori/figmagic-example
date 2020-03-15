@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import React from "react";
+import PropTypes from "prop-types";
+import { withRouter } from "react-router-dom";
 
-import Grid from 'components/Grid';
-import Modal from 'components/Modal';
-import Button from 'components/Button';
+import Grid from "components/Grid";
+import Modal from "components/Modal";
+import Button from "components/Button";
 
 class SomeView extends React.Component {
 	constructor(props) {
@@ -25,20 +25,17 @@ class SomeView extends React.Component {
 		return (
 			<div>
 				{!this.state.isModalOpen && (
-					<>
-						<Grid size="8">
-							<Button onClick={this.handleOpenModal}>Open modal</Button>
-						</Grid>
-					</>
+					<Grid size="8">
+						<Button onClick={this.handleOpenModal}>Open modal</Button>
+					</Grid>
 				)}
+
 				{this.state.isModalOpen && (
-					<>
-						<Grid size="4">
-							<Modal handleOpenModal={this.handleOpenModal} />
-							<Modal handleOpenModal={this.handleOpenModal} />
-							<Modal handleOpenModal={this.handleOpenModal} />
-						</Grid>
-					</>
+					<Grid size="4">
+						<Modal handleOpenModal={this.handleOpenModal} />
+						<Modal handleOpenModal={this.handleOpenModal} />
+						<Modal handleOpenModal={this.handleOpenModal} />
+					</Grid>
 				)}
 			</div>
 		);

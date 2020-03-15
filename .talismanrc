@@ -1,14 +1,8 @@
 fileignoreconfig:
-- filename: env
-  checksum: 3af475a2a628c381ca3ec91d04000ed1caee1ffecc1e5119c54058b6809372df
-  ignore_detectors: []
 - filename: figma/figma.json
-  checksum: 3579adb1c4159a42f58f409ff443941cee204e198f9b8c7d9b3db8ee2377d5bf
+  checksum: 1282842fd9775f9af7c7e864b284561abd2b67b7e970d355ed3c6f3f3d07b6dc
   ignore_detectors: []
 - filename: yarn.lock
-  checksum: 063fbf2664b5334ca482136f2123c0f3802c2b3f9b482d3c22d32260422b44b7
-  ignore_detectors: []
-- filename: package-lock.json
-  checksum: dc1651e94d9de26f031d535703482c2f04ad256721a76693c0151ebec28f5372
+  checksum: 6412e0a189d82f7ab242ade0609a9cf4d21867954cb161ee85e97d6322157cc1
   ignore_detectors: []
 scopeconfig: []

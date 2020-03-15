@@ -1,7 +1,8 @@
 const fontFamilies = {
- "light": "HelveticaNeue",
+ "bold": "HelveticaNeue",
  "medium": "HelveticaNeue",
- "regular": "HelveticaNeue"
+ "regular": "HelveticaNeue",
+ "light": "HelveticaNeue"
 }
 
 export default fontFamilies;

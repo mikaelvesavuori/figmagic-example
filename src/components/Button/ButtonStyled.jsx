@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import fontSizes from 'tokens/fontSizes.mjs';
-import fontFamilies from 'tokens/fontFamilies.mjs';
-import spacing from 'tokens/spacing.mjs';
-import colors from 'tokens/colors.mjs';
+import fontSizes from "tokens/fontSizes.mjs";
+import fontFamilies from "tokens/fontFamilies.mjs";
+import spacing from "tokens/spacing.mjs";
+import colors from "tokens/colors.mjs";
 
 const ButtonStyled = styled.button`
 	width: 100%;
