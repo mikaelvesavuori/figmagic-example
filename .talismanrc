@@ -1,8 +1,5 @@
 fileignoreconfig:
-- filename: figma/figma.json
-  checksum: 1282842fd9775f9af7c7e864b284561abd2b67b7e970d355ed3c6f3f3d07b6dc
-  ignore_detectors: []
-- filename: yarn.lock
-  checksum: 6412e0a189d82f7ab242ade0609a9cf4d21867954cb161ee85e97d6322157cc1
+- filename: readme.md
+  checksum: 3dffe08c2ef63b0cfd1ebf7efe6ccd9c0b8a89838255a3cf75a2112721d9af29
   ignore_detectors: []
 scopeconfig: []
