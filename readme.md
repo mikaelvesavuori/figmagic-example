@@ -2,12 +2,13 @@
 
 This repository is a demo of [Figmagic](https://github.com/mikaelvesavuori/figmagic). In this project you're going to see how a project running Webpack, React and Styled Components might use tokens. There are pre-compiled tokens available under `/tokens`.
 
-The example design token setup is available at [https://www.figma.com/file/K39TRbltDVcWFlpzw9r7Zh/Figmagic-%E2%80%94-Design-System-for-Tokens?node-id=2605%3A12](https://www.figma.com/file/K39TRbltDVcWFlpzw9r7Zh/Figmagic-%E2%80%94-Design-System-for-Tokens?node-id=2605%3A12). That's the file providing the tokens seen here.
+The example design token setup is available at [https://www.figma.com/community/file/821094451476848226](https://www.figma.com/community/file/821094451476848226). That's the file providing the tokens seen here.
 
 ## Installation
 
 - Run `yarn` or `npm install` inside of the repository to install all dependencies
 - Start the project by running `yarn start` or `npm start`
+- To sync graphics, run `yarn figmagic:graphics` or `npm run figmagic:graphics`
 
 ## Using Figmagic for your own files
 

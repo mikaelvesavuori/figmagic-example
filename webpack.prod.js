@@ -6,7 +6,7 @@ const WorkboxPlugin = require("workbox-webpack-plugin");
 
 module.exports = merge(common, {
 	optimization: {
-		minimize: true, // This is used as a fail-safe, since putting this on could break code (like react-router)
+		minimize: true,
 		splitChunks: {
 			chunks: "all"
 		}

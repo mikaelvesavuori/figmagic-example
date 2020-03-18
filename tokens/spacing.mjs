@@ -1,8 +1,9 @@
 const spacing = {
  "huge": "6rem",
  "large": "4rem",
- "medium": "3rem",
- "small": "2rem",
+ "big": "3rem",
+ "medium": "2rem",
+ "small": "1rem",
  "tiny": "0.5rem"
 }
 

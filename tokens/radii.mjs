@@ -1,8 +1,8 @@
 const radii = {
- "circle": "100%",
- "soft": "8%",
- "rounded": "4%",
- "hard": "0%"
+ "circle": "100px",
+ "soft": "8px",
+ "rounded": "4px",
+ "hard": "0px"
 }
 
 export default radii;
