@@ -6,10 +6,7 @@
 				"modules": false,
 				"loose": true,
 				"useBuiltIns": "usage",
-				"corejs": 3,
-				"targets": {
-					"browsers": [">0.25%", "ie 11", "not op_mini all"]
-				}
+				"corejs": 3
 			}
 		],
 		"@babel/preset-react"

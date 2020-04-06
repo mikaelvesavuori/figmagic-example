@@ -1,4 +1,15 @@
 {
-	"debugMode": false,
-	"outputTokenFormat": "mjs"
+  "fontUnit": "rem",
+  "outputFileName": "figma.json",
+  "outputFolderBaseFile": ".figmagic",
+  "outputFolderTokens": "tokens",
+  "outputTokenFormat": "mjs",
+  "outputFolderElements": "elements",
+  "spacingUnit": "rem",
+  "usePostscriptFontNames": true,
+  "templates": {
+    "templatePathReact": "./node_modules/figmagic/templates/react.jsx",
+    "templatePathStyled": "./node_modules/figmagic/templates/styled.jsx",
+    "templatePathStorybook": "./node_modules/figmagic/templates/story.js"
+  }
 }

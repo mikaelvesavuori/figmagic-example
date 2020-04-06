@@ -1,15 +1,15 @@
-import React from 'react';
-import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
-import Loadable from 'react-loadable';
+import React from "react";
+import { Route, Redirect, Switch, withRouter } from "react-router-dom";
+import Loadable from "react-loadable";
 
-const SomeView = Loadable({
-	loader: () => import('containers/SomeView'),
-	loading: () => <div>Loading...</div>
+const DemoView = Loadable({
+	loader: () => import("containers/DemoView"),
+	loading: () => <div>Loading...</div>,
 });
 
 const App = () => (
 	<Switch>
-		<Route exact path="/" render={() => <SomeView />} />
+		<Route exact path="/" render={() => <DemoView />} />
 		<Route render={() => <Redirect to="/" />} />
 	</Switch>
 );
