@@ -26,7 +26,7 @@ The Figmagic template design system is available at [https://www.figma.com/commu
 
 Read more on the [Figma developer site](https://www.figma.com/developers/docs) if you need any further information.
 
-## How much work was after after doing a clean pull from the Figmagic demo template?
+## How much work was added after doing a clean pull from the Figmagic demo template?
 
 Only changes in example from a vanilla pull from Figma document:
 
