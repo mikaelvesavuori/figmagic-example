@@ -45,7 +45,7 @@
 		"clean-webpack-plugin": "^3.0.0",
 		"copy-webpack-plugin": "^5.1.1",
 		"extract-text-webpack-plugin": "^4.0.0-beta",
-		"figmagic": "^3.0.0",
+		"figmagic": "^3.0.3",
 		"file-loader": "^6.0.0",
 		"html-loader": "^1.1.0",
 		"html-webpack-plugin": "^4.0.4",
