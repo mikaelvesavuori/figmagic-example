@@ -19,7 +19,7 @@
 	"module": "src/index.jsx",
 	"license": "MIT",
 	"dependencies": {
-		"core-js": "3",
+		"core-js": "3.6.5",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-helmet": "^5.2.1",
