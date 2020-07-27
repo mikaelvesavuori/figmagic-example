@@ -1,6 +1,6 @@
 const fs = require("fs");
 const webpack = require("webpack");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const path = require("path");
 const common = require("./webpack.common.js");
 
@@ -12,16 +12,16 @@ module.exports = merge(common, {
 		contentBase: srcDir,
 		publicPath: "/",
 		hot: true,
-		host: "0.0.0.0"
+		host: "0.0.0.0",
 	},
 	devtool: "cheap-module-source-map",
 	plugins: [
 		new webpack.NamedModulesPlugin(),
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
 	],
 	performance: {
 		maxEntrypointSize: 1024000,
 		maxAssetSize: 1024000,
-		hints: "warning"
-	}
+		hints: "warning",
+	},
 });
