@@ -2,4 +2,4 @@
 
 # Input: Checkbox
 
-Perfect for that feeling of completeness: click. And your done! What a feeling.
+Perfect for that feeling of completeness: click. And you're done! What a feeling.

@@ -5,5 +5,4 @@ import notes from './Form.description.md';
 
 export default { title: 'Form', parameters: { notes } };
 
-export const FormRegular = () => <Form></Form>
-;
+export const FormRegular = () => <Form> </Form>;

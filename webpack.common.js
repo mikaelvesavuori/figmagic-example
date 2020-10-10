@@ -14,7 +14,7 @@ module.exports = {
 	watch: false,
 	context: srcDir,
 	entry: {
-		app: "./index.jsx",
+		app: "./index.tsx",
 	},
 	output: {
 		path: distDir,
@@ -30,6 +30,9 @@ module.exports = {
 		extensions: [
 			".js",
 			".jsx",
+			".ts",
+			".tsx",
+			".mjs",
 			".html",
 			".jpg",
 			".jpeg",
@@ -42,11 +45,23 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.(js|jsx)$/,
+				test: /\.(js|jsx|mjs)$/,
 				use: [
 					{
 						loader: "babel-loader",
 					},
+				],
+				exclude: /node_modules/,
+			},
+			{
+				test: /\.tsx?$/,
+				use: [
+					{
+						loader: "ts-loader",
+						options: {
+								configFile: path.resolve("./tsconfig.json"),
+						},
+					}
 				],
 				exclude: /node_modules/,
 			},

@@ -5,5 +5,4 @@ import notes from './Input.description.md';
 
 export default { title: 'Input', parameters: { notes } };
 
-export const InputRegular = () => <Input>Sample input</Input>
-;
+export const InputRegular = () => <Input> </Input>;

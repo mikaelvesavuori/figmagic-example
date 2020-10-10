@@ -5,5 +5,4 @@ import notes from './Slider.description.md';
 
 export default { title: 'Slider', parameters: { notes } };
 
-export const SliderRegular = () => <Slider></Slider>
-;
+export const SliderRegular = () => <Slider> </Slider>;

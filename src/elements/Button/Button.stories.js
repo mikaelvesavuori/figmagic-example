@@ -5,5 +5,4 @@ import notes from './Button.description.md';
 
 export default { title: 'Button', parameters: { notes } };
 
-export const ButtonRegular = () => <Button>Normal</Button>
-;
+export const ButtonRegular = () => <Button>Button text</Button>;

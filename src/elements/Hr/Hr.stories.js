@@ -5,5 +5,4 @@ import notes from './Hr.description.md';
 
 export default { title: 'Hr', parameters: { notes } };
 
-export const HrRegular = () => <Hr></Hr>
-;
+export const HrRegular = () => <Hr> </Hr>;

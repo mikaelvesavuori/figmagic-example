@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+		"module": "esnext",
+		"target": "es6",
+    "moduleResolution": "node",
+		"jsx": "react",
+		"noImplicitAny": false,
+		"allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+		"noUnusedParameters": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true
+  },
+	"include": ["./src/", "./tokens/"],
+	"compileOnSave": false
+}

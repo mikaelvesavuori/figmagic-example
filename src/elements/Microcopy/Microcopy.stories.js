@@ -5,5 +5,4 @@ import notes from './Microcopy.description.md';
 
 export default { title: 'Microcopy', parameters: { notes } };
 
-export const MicrocopyRegular = () => <Microcopy>Microcopy</Microcopy>
-;
+export const MicrocopyRegular = () => <Microcopy>Microcopy</Microcopy>;

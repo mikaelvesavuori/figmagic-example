@@ -5,5 +5,4 @@ import notes from './Select.description.md';
 
 export default { title: 'Select', parameters: { notes } };
 
-export const SelectRegular = () => <Select>Select Box</Select>
-;
+export const SelectRegular = () => <Select> </Select>;

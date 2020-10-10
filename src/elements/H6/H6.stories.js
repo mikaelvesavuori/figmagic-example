@@ -5,5 +5,4 @@ import notes from './H6.description.md';
 
 export default { title: 'H6', parameters: { notes } };
 
-export const H6Regular = () => <H6>H6 Body Medium</H6>
-;
+export const H6Regular = () => <H6>H6 Body Medium</H6>;

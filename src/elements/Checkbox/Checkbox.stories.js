@@ -5,5 +5,4 @@ import notes from './Checkbox.description.md';
 
 export default { title: 'Checkbox', parameters: { notes } };
 
-export const CheckboxRegular = () => <Checkbox>asdf</Checkbox>
-;
+export const CheckboxRegular = () => <Checkbox> </Checkbox>;
