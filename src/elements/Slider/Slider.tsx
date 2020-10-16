@@ -2,6 +2,10 @@ import * as React from 'react';
 
 import SliderStyled from './SliderStyled';
 
-const Slider = (props) => <SliderStyled type="range">{props.children}</SliderStyled>;
+interface SliderProps {
+  [propName: string]: {};
+}
+
+const Slider: React.FC<SliderProps> = () => <SliderStyled type="range"></SliderStyled>;
 
 export default Slider;

@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import MicrocopyCss from './MicrocopyCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface MicrocopyProps {
+  children: any;
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const MicrocopyStyled = styled.sub`
+const MicrocopyStyled = styled.sub<MicrocopyProps>`
   ${MicrocopyCss};
 `;
 

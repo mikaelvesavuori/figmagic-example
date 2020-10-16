@@ -2,6 +2,10 @@ import * as React from 'react';
 
 import HrStyled from './HrStyled';
 
-const Hr = (props) => <HrStyled>{props.children}</HrStyled>;
+interface HrProps {
+  [propName: string]: {};
+}
+
+const Hr: React.FC<HrProps> = () => <HrStyled></HrStyled>;
 
 export default Hr;

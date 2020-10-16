@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import ParagraphCss from './ParagraphCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface ParagraphProps {
+  children: any;
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const ParagraphStyled = styled.p`
+const ParagraphStyled = styled.p<ParagraphProps>`
   ${ParagraphCss};
 `;
 

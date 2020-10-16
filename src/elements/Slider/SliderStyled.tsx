@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 import SliderCss from './SliderCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface SliderProps {
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const SliderStyled = styled.input`
+const SliderStyled = styled.input<SliderProps>`
   ${SliderCss};
 `;
 

@@ -6,25 +6,33 @@ interface ViewProps {}
 interface ViewState {
   filled: boolean;
   checked: boolean;
+  value: any;
 }
 
 class DemoView extends React.Component<ViewProps, ViewState> {
-  constructor(props: any) {
+  constructor(props: ViewProps) {
     super(props);
 
     this.state = {
       filled: false,
-      checked: false
+      checked: false,
+      value: ''
     };
   }
 
-  fill(e: any): void {
-    console.log('e', e);
-    let filled = false;
-    if (e.target.value && e.target.value !== '') filled = true;
+  fill(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void {
+    const filled =
+      e.target.value && e.target.value !== '' && e.target.value.length >= 3 ? true : false;
+
+    const value = e.target.value;
+
+    console.log('value', value);
+
+    console.log('filled', filled);
 
     this.setState({
-      filled
+      filled,
+      value
     });
   }
 
@@ -34,7 +42,7 @@ class DemoView extends React.Component<ViewProps, ViewState> {
     });
   }
 
-  submit(e: any): void {
+  submit(e: React.FormEvent<HTMLFormElement>): void {
     e.preventDefault();
     alert('Hey there cowboy! Nice seeing you actually filled out this bogus form!');
   }
@@ -44,9 +52,10 @@ class DemoView extends React.Component<ViewProps, ViewState> {
       <DemoForm
         fill={(e: any) => this.fill(e)}
         check={() => this.check()}
+        submit={(e: any) => this.submit(e)}
+        value={this.state.value}
         filled={this.state.filled}
         checked={this.state.checked}
-        submit={(e: any) => this.submit(e)}
       />
     );
   }

@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 import HrCss from './HrCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface HrProps {
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const HrStyled = styled.hr`
+const HrStyled = styled.hr<HrProps>`
   ${HrCss};
 `;
 

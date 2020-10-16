@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import CheckboxCss from './CheckboxCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface CheckboxProps {
+  onChange: any;
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const CheckboxStyled = styled.input`
+const CheckboxStyled = styled.input<CheckboxProps>`
   ${CheckboxCss};
 `;
 

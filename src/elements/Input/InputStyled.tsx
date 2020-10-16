@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 import InputCss from './InputCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface InputProps {
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const InputStyled = styled.input`
+const InputStyled = styled.input<InputProps>`
   ${InputCss};
 `;
 

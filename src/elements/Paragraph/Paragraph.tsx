@@ -2,6 +2,13 @@ import * as React from 'react';
 
 import ParagraphStyled from './ParagraphStyled';
 
-const Paragraph = (props) => <ParagraphStyled>Paragraph{props.children}</ParagraphStyled>;
+interface ParagraphProps {
+  children: any;
+  [propName: string]: {};
+}
+
+const Paragraph: React.FC<ParagraphProps> = ({ children }) => (
+  <ParagraphStyled>{children ? children : "Paragraph"}</ParagraphStyled>
+);
 
 export default Paragraph;

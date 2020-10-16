@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import FormCss from './FormCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface FormProps {
+  onSubmit: any;
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const FormStyled = styled.form`
+const FormStyled = styled.form<FormProps>`
   ${FormCss};
 `;
 

@@ -3,8 +3,8 @@
 	"outputFormatElements": "tsx",
 	"outputFormatStyled": "tsx",
 	"outputFormatCss": "ts",
-	"syncGraphics": true,
-	"syncElements": true,
+	"syncGraphics": false,
+	"syncElements": false,
 	"syncTokens": true,
 	"recompileLocal": false,
 	"templates": {

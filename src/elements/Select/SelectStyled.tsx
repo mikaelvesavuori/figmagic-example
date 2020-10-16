@@ -2,11 +2,13 @@ import styled from 'styled-components';
 
 import SelectCss from './SelectCss';
 
-// Do your regular imports like:
-// import fontSizes from 'tokens/fontSizes';
+interface SelectProps {
+  children: any;
+  [propName: string]: {};
+}
 
 // Extend the below as needed
-const SelectStyled = styled.select`
+const SelectStyled = styled.select<SelectProps>`
   ${SelectCss};
 `;
 
