@@ -42,4 +42,4 @@ These changes should outline all of the (mostly minor) amendments done to a set 
 - Add props and event handling for demo form functionality
 - Add disabled styling to Checkbox and Button
 - Write a component (DemoForm) that composes the individual elements as per the component in the template
-- Add some minor changes due to the nature of Typescript.
+- Minor changes due to the nature of Typescript.
