@@ -38,13 +38,8 @@ These changes should outline all of the (mostly minor) amendments done to a set 
 
 - Remove texts from H1-H6 + Paragraph + Microcopy + Select
 - Close input elements (Slider, Input, Checkbox)
-- Add padding to Form element (spacing small)
-- Add className=”Normal” to Button so it picks the Normal style
+- Add `className=”Normal”` to Button so it picks the Normal style
 - Add props and event handling for demo form functionality
 - Add disabled styling to Checkbox and Button
-
-In a addition to that, a custom component was written:
-
 - Write a component (DemoForm) that composes the individual elements as per the component in the template
-
-And some minor changes due to the nature of Typescript.
+- Add some minor changes due to the nature of Typescript.
