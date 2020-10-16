@@ -46,3 +46,5 @@ These changes should outline all of the (mostly minor) amendments done to a set 
 In a addition to that, a custom component was written:
 
 - Write a component (DemoForm) that composes the individual elements as per the component in the template
+
+And some minor changes due to the nature of Typescript.
