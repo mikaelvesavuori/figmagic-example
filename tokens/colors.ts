@@ -4,6 +4,7 @@ const colors = {
  "green3": "rgba(111, 207, 151, 1)",
  "green2": "rgba(39, 174, 96, 1)",
  "green1": "rgba(33, 150, 83, 1)",
+ "blue4": "linear-gradient(90deg, rgba(63, 163, 195, 0.95) 9%, rgba(86, 204, 242, 0.02) 94%)",
  "blue3": "rgba(86, 204, 242, 0.8)",
  "blue2": "rgba(45, 156, 219, 0.9)",
  "blue1": "rgba(47, 128, 237, 1)",
