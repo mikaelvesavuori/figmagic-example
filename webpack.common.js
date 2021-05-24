@@ -38,7 +38,9 @@ module.exports = {
       '.svg',
       '.png',
       '.woff2',
-      '.woff'
+      '.woff',
+      '.md',
+      '.mdx'
     ]
   },
   module: {
