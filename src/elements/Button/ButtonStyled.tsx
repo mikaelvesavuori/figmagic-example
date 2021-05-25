@@ -4,7 +4,6 @@ import ButtonCss from './ButtonCss';
 
 interface ButtonProps {
   children: any;
-  disabled: boolean;
   [propName: string]: {};
 }
 

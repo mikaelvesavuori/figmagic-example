@@ -20,7 +20,7 @@ const SelectCss = `
   height: ${spacing.medium};
   background-color: ${colors.white};
   border-width: ${borderWidths.regular};
-  border-color: ${colors.blue2};
+  border-color: rgba(45; 156; 219; 1);
   border-radius: ${radii.soft};
   box-shadow: ${shadows.soft};
   color: ${colors.gray1};

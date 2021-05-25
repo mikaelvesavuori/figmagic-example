@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import CheckboxCss from './CheckboxCss';
 
 interface CheckboxProps {
-  onChange: any;
+  children: any;
   [propName: string]: {};
 }
 

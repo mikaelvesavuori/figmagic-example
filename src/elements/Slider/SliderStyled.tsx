@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import SliderCss from './SliderCss';
 
 interface SliderProps {
+  children: any;
   [propName: string]: {};
 }
 

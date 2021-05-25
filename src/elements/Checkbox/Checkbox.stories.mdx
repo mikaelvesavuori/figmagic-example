@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import Checkbox from './Checkbox';
+
+import CheckboxDescription from './Checkbox.description.md';
+
+<Meta
+  title="Checkbox"
+  component={Checkbox}
+  argTypes={{ }}
+/>
+
+<CheckboxDescription />
+
+<Canvas>
+  <Story name="Checkbox" height="400px">
+    {(args) => <Checkbox {...args} />}
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+<ArgsTable of={Checkbox} />

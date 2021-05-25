@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import FormCss from './FormCss';
 
 interface FormProps {
-  onSubmit: any;
+  children: any;
   [propName: string]: {};
 }
 

@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import Slider from './Slider';
+
+import SliderDescription from './Slider.description.md';
+
+<Meta
+  title="Slider"
+  component={Slider}
+  argTypes={{ }}
+/>
+
+<SliderDescription />
+
+<Canvas>
+  <Story name="Slider" height="400px">
+    {(args) => <Slider {...args} />}
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+<ArgsTable of={Slider} />

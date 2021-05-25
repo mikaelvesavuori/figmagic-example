@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import HrCss from './HrCss';
 
 interface HrProps {
+  children: any;
   [propName: string]: {};
 }
 

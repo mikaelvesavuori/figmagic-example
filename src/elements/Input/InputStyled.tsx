@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import InputCss from './InputCss';
 
 interface InputProps {
+  children: any;
   [propName: string]: {};
 }
 

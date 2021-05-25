@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import Input from './Input';
+
+import InputDescription from './Input.description.md';
+
+<Meta
+  title="Input"
+  component={Input}
+  argTypes={{ }}
+/>
+
+<InputDescription />
+
+<Canvas>
+  <Story name="Input" height="400px">
+    {(args) => <Input {...args} />}
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+<ArgsTable of={Input} />

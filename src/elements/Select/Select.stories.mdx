@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import Select from './Select';
+
+import SelectDescription from './Select.description.md';
+
+<Meta
+  title="Select"
+  component={Select}
+  argTypes={{ }}
+/>
+
+<SelectDescription />
+
+<Canvas>
+  <Story name="Select" height="400px">
+    {(args) => <Select {...args} />}
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+<ArgsTable of={Select} />

@@ -14,7 +14,7 @@ font-family: ${fontFamilies.medium};
 font-family: ${fontFamilies.regular};
 font-family: ${fontFamilies.light};
 font-weight: ${fontWeights.regular};
-line-height: ${lineHeights.xs};
+line-height: ${lineHeights.s};
 text-align: left;
 `;
 

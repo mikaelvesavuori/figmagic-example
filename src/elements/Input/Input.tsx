@@ -3,18 +3,12 @@ import * as React from 'react';
 import InputStyled from './InputStyled';
 
 interface InputProps {
-  value: any;
-  onChange(e: any): void;
+  children: any;
+  [propName: string]: {};
 }
 
-const Input: React.FC<InputProps> = ({ value, onChange }) => (
-  <InputStyled
-    value={value}
-    pattern=".{3,}"
-    type="text"
-    placeholder="Placeholder text"
-    onChange={onChange}
-  ></InputStyled>
+const Input: React.FC<InputProps> = ({ children }) => (
+  <InputStyled type="text" placeholder="Placeholder text" />
 );
 
 export default Input;

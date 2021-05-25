@@ -3,13 +3,12 @@ import * as React from 'react';
 import CheckboxStyled from './CheckboxStyled';
 
 interface CheckboxProps {
-  disabled: boolean;
-  onChange(e: any): void;
+  children: any;
   [propName: string]: {};
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({ disabled, onChange }) => (
-  <CheckboxStyled type="checkbox" onChange={onChange} disabled={disabled} />
+const Checkbox: React.FC<CheckboxProps> = ({ children }) => (
+  <CheckboxStyled type="checkbox" />
 );
 
 export default Checkbox;

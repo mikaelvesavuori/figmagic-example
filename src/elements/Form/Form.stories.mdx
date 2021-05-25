@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import Form from './Form';
+
+import FormDescription from './Form.description.md';
+
+<Meta
+  title="Form"
+  component={Form}
+  argTypes={{ }}
+/>
+
+<FormDescription />
+
+<Canvas>
+  <Story name="Form" height="400px">
+    {(args) => <Form {...args} />}
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+<ArgsTable of={Form} />

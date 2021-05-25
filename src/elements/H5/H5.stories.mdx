@@ -1,0 +1,23 @@
+import { Meta, Canvas, Story, ArgsTable } from '@storybook/addon-docs/blocks';
+
+import H5 from './H5';
+
+import H5Description from './H5.description.md';
+
+<Meta
+  title="H5"
+  component={H5}
+  argTypes={{ }}
+/>
+
+<H5Description />
+
+<Canvas>
+  <Story name="H5" height="400px">
+    {(args) => <H5 {...args} />}
+  </Story>
+</Canvas>
+
+## ArgsTable
+
+<ArgsTable of={H5} />

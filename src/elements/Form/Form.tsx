@@ -4,12 +4,11 @@ import FormStyled from './FormStyled';
 
 interface FormProps {
   children: any;
-  onSubmit(e: any): void;
   [propName: string]: {};
 }
 
-const Form: React.FC<FormProps> = ({ children, onSubmit }) => (
-  <FormStyled onSubmit={onSubmit}>{children ? children : 'Text content inside form'}</FormStyled>
+const Form: React.FC<FormProps> = ({ children }) => (
+  <FormStyled>{children ? children : "Text content inside form. This allows us to specify basic font styling but also infer the padding from the spacing between text and layout/rectangle element."}</FormStyled>
 );
 
 export default Form;

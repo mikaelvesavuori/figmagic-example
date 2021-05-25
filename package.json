@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/mikaelvesavuori/figmagic-example.git"
   },
-  "version": "4.1.2",
+  "version": "4.2.1",
   "author": "Mikael Vesavuori",
   "module": "src/index.jsx",
   "license": "MIT",
@@ -61,7 +61,7 @@
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "figmagic": "^4.1.2",
+    "figmagic": "^4.2.1",
     "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
@@ -82,10 +82,10 @@
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js --mode production",
     "build-storybook": "build-storybook",
-    "figmagic": "node ./node_modules/figmagic/build/index.js",
-    "figmagic:graphics": "node ./node_modules/figmagic/build/index.js --syncGraphics",
-    "figmagic:elements": "node ./node_modules/figmagic/build/index.js --syncElements",
-    "figmagic:sync": "node ./node_modules/figmagic/build/index.js --syncElements --syncGraphics",
+    "figmagic": "npx figmagic",
+    "figmagic:graphics": "npx figmagic --syncGraphics",
+    "figmagic:elements": "npx figmagic --syncElements",
+    "figmagic:sync": "npx figmagic --syncElements --syncGraphics",
     "storybook": "start-storybook"
   }
 }

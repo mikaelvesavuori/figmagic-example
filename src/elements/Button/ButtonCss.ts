@@ -2,8 +2,8 @@
 
 import spacing from '../../../tokens/spacing';
 import borderWidths from '../../../tokens/borderWidths';
-import colors from '../../../tokens/colors';
 import radii from '../../../tokens/radii';
+import colors from '../../../tokens/colors';
 import fontSizes from '../../../tokens/fontSizes';
 import fontFamilies from '../../../tokens/fontFamilies';
 import fontWeights from '../../../tokens/fontWeights';
@@ -17,7 +17,7 @@ const ButtonCss = `
   border-style: solid;
   height: ${spacing.big};
   border-width: ${borderWidths.hairline};
-  border-color: ${colors.blue2};
+  border-color: rgba(45; 156; 219; 1);
   border-radius: ${radii.soft};
   color: ${colors.white};
   font-size: ${fontSizes.paragraph};
