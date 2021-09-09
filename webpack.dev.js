@@ -10,7 +10,8 @@ module.exports = merge(common, {
   devServer: {
     historyApiFallback: true,
     contentBase: srcDir,
-    publicPath: '/',
+		publicPath: '/',
+		open: true,
     hot: true,
     host: '0.0.0.0'
   },

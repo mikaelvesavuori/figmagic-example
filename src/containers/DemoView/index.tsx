@@ -11,13 +11,13 @@ interface ViewState {
 
 class DemoView extends React.Component<ViewProps, ViewState> {
   constructor(props: ViewProps) {
-    super(props);
+		super(props);
 
     this.state = {
       filled: false,
       checked: false,
       value: ''
-    };
+		};
   }
 
   fill(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>): void {
@@ -27,7 +27,6 @@ class DemoView extends React.Component<ViewProps, ViewState> {
     const value = e.target.value;
 
     console.log('value', value);
-
     console.log('filled', filled);
 
     this.setState({
@@ -36,7 +35,7 @@ class DemoView extends React.Component<ViewProps, ViewState> {
     });
   }
 
-  check(): void {
+	check(): void {
     this.setState({
       checked: !this.state.checked
     });

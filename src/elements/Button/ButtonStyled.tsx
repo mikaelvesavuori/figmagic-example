@@ -4,7 +4,7 @@ import ButtonCss from './ButtonCss';
 
 interface ButtonProps {
   children: any;
-  [propName: string]: {};
+  [propName: string]: any;
 }
 
 // Extend the below as needed

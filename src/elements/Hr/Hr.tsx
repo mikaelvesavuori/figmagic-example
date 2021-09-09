@@ -3,7 +3,7 @@ import * as React from 'react';
 import HrStyled from './HrStyled';
 
 interface HrProps {
-  children: any;
+  children?: any;
   [propName: string]: {};
 }
 

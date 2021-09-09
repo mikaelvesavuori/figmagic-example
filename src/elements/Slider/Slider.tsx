@@ -3,7 +3,7 @@ import * as React from 'react';
 import SliderStyled from './SliderStyled';
 
 interface SliderProps {
-  children: any;
+  children?: any;
   [propName: string]: {};
 }
 
