@@ -7,7 +7,7 @@ interface H1Props {
   [propName: string]: {};
 }
 
-const H1: React.FC<H1Props> = ({ children }) => (
+const H1: React.FC<H1Props> = ({ children, props }) => (
   <H1Styled>{children ? children : "H1 Heading Large"}</H1Styled>
 );
 

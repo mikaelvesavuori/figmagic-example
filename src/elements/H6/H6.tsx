@@ -7,7 +7,7 @@ interface H6Props {
   [propName: string]: {};
 }
 
-const H6: React.FC<H6Props> = ({ children }) => (
+const H6: React.FC<H6Props> = ({ children, props }) => (
   <H6Styled>{children ? children : "H6 Body Medium"}</H6Styled>
 );
 

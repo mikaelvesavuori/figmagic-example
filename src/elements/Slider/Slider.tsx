@@ -7,7 +7,7 @@ interface SliderProps {
   [propName: string]: {};
 }
 
-const Slider: React.FC<SliderProps> = ({ children }) => (
+const Slider: React.FC<SliderProps> = ({ children, props }) => (
   <SliderStyled type="range" />
 );
 

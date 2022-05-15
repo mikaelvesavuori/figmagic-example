@@ -7,7 +7,7 @@ interface ParagraphProps {
   [propName: string]: {};
 }
 
-const Paragraph: React.FC<ParagraphProps> = ({ children }) => (
+const Paragraph: React.FC<ParagraphProps> = ({ children, props }) => (
   <ParagraphStyled>{children ? children : "Paragraph"}</ParagraphStyled>
 );
 

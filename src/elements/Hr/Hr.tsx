@@ -7,7 +7,7 @@ interface HrProps {
   [propName: string]: {};
 }
 
-const Hr: React.FC<HrProps> = ({ children }) => (
+const Hr: React.FC<HrProps> = ({ children, props }) => (
   <HrStyled />
 );
 

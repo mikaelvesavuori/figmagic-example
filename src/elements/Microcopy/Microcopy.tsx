@@ -7,7 +7,7 @@ interface MicrocopyProps {
   [propName: string]: {};
 }
 
-const Microcopy: React.FC<MicrocopyProps> = ({ children }) => (
+const Microcopy: React.FC<MicrocopyProps> = ({ children, props }) => (
   <MicrocopyStyled>{children ? children : "Microcopy"}</MicrocopyStyled>
 );
 

@@ -7,7 +7,7 @@ interface H3Props {
   [propName: string]: {};
 }
 
-const H3: React.FC<H3Props> = ({ children }) => (
+const H3: React.FC<H3Props> = ({ children, props }) => (
   <H3Styled>{children ? children : "H3 Heading Small"}</H3Styled>
 );
 

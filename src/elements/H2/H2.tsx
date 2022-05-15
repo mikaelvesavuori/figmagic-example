@@ -7,7 +7,7 @@ interface H2Props {
   [propName: string]: {};
 }
 
-const H2: React.FC<H2Props> = ({ children }) => (
+const H2: React.FC<H2Props> = ({ children, props }) => (
   <H2Styled>{children ? children : "H2 Heading Medium"}</H2Styled>
 );
 

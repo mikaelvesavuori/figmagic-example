@@ -7,7 +7,7 @@ interface SelectProps {
   [propName: string]: {};
 }
 
-const Select: React.FC<SelectProps> = ({ children }) => (
+const Select: React.FC<SelectProps> = ({ children, props }) => (
   <SelectStyled>{children ? children : ""}</SelectStyled>
 );
 

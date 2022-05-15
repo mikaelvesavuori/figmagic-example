@@ -7,7 +7,7 @@ interface H5Props {
   [propName: string]: {};
 }
 
-const H5: React.FC<H5Props> = ({ children }) => (
+const H5: React.FC<H5Props> = ({ children, props }) => (
   <H5Styled>{children ? children : "H5 Body Large"}</H5Styled>
 );
 

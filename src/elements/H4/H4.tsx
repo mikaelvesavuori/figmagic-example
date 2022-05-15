@@ -7,7 +7,7 @@ interface H4Props {
   [propName: string]: {};
 }
 
-const H4: React.FC<H4Props> = ({ children }) => (
+const H4: React.FC<H4Props> = ({ children, props }) => (
   <H4Styled>{children ? children : "H4 Heading Extra Small"}</H4Styled>
 );
 
